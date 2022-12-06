@@ -17,14 +17,13 @@ El decorador @property es un decorador incorporado para la función property() e
 
 ```
 class Clase:
-    def __init__(self, mi_atributo):
 
-    self.__mi_atributo = mi_atributo
+    def __init__(self, mi_atributo):
+        self.__mi_atributo = mi_atributo
 
     @property
     def mi_atributo(self):
-
-    return self.__mi_atributo
+        return self.__mi_atributo
 
 saludo = Clase("Hola desde un Decorador.")
 print(saludo.mi_atributo)
